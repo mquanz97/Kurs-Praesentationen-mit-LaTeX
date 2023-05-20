@@ -1,0 +1,129 @@
+
+%%%%%%%%%% Farben definieren %%%%%%%%%
+
+\definecolor{ETgreen}{RGB}{0,67,70}
+\definecolor{ETblue}{RGB}{23,42,58}
+\definecolor{ETgray}{RGB}{141,153,174}
+\definecolor{ETred}{RGB}{166,38,57}
+\definecolor{ETwhite}{RGB}{237,242,244}
+
+%%%%%%%%% Farben zuweisen %%%%%%%%%%%%%
+
+\setbeamercolor{normal text}{fg=black, bg=white}
+\setbeamercolor{alerted text}{fg=ETred}
+
+\setbeamercolor{structure}{fg=ETgreen}
+
+\setbeamercolor{frametitle}{fg=ETwhite}
+\setbeamercolor{subtitle}{fg=ETwhite}
+
+\setbeamercolor{block title}{fg=ETwhite, bg=ETgray}
+\setbeamercolor{block body}{bg=ETwhite, fg=black}
+
+\setbeamercolor{block title alerted}{fg=ETred, bg=ETgray}
+\setbeamercolor{block body alerted}{bg=ETwhite, fg=black}
+
+\setbeamercolor{block title example}{fg=ETblue, bg=ETgray}
+\setbeamercolor{block body example}{bg=ETwhite, fg=black}
+
+\setbeamercolor{footlinefarbe}{fg=ETwhite, bg=ETgreen}
+
+%%%%%%%%%%%%% Kopfzeile %%%%%%%%%%%%%%%
+
+
+
+\def\includeLogo{\includegraphics[height=0.1\textwidth]{C:/Users/Markus/Desktop/Smiley.jpg}}
+
+\setbeamertemplate{headline}{
+	\raisebox{-10mm}[15pt][15pt]
+{\color{ETgreen} \rule{\paperwidth}{\paperheight}}
+\hspace*{\fill}	
+\raisebox{-5mm}[0pt][0pt]{\includeLogo}	
+}
+
+\setbeamertemplate{frametitle}{
+\begin{beamercolorbox}[wd=\paperwidth, ht=-6ex, leftskip=0.3cm, rightskip=0.3cm]{}
+	\tabular{@{}l}
+	\insertframetitle \\
+	\insertframesubtitle
+	\endtabular \hfill \vspace{1ex}	
+\end{beamercolorbox}
+}
+
+%%%%%%%%%%%% Fußzeile %%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{footline}{
+\begin{beamercolorbox}[wd=\textwidth, ht=3mm]{footlinefarbe}
+	\hspace*{2mm} \insertsection \, - \inserttitle \hfill \insertauthor
+	\hspace*{6,8cm} \insertframenumber \hspace*{2mm} \vspace*{0.5mm}
+\end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%% Titelfolie %%%%%%%%%%%%%%%%%%%
+
+\newlength{\Abstandlinks}
+\setlength{\Abstandlinks}{20pt}
+
+\setbeamertemplate{title page}{
+	\vspace*{10mm}
+	\begin{beamercolorbox}[wd=\paperwidth, ht=0.06\paperwidth]{Title}
+		\hspace*{\Abstandlinks}
+		\hspace*{-2ex}
+		\usebeamerfont{title}
+		\inserttitle
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[wd=\paperwidth, ht=0.03\paperwidth]{Title}
+		\usebeamerfont{subtitle}
+		\hspace*{\Abstandlinks}
+		\hspace*{-1.5ex}
+		\vspace*{-10pt}
+		\insertsubtitle
+		
+	\end{beamercolorbox}
+
+	\begin{beamercolorbox}[wd=\paperwidth,ht=0.03\paperwidth]{Title}
+		\vspace*{-1.5ex}
+		\hspace*{\Abstandlinks}
+		\hspace*{-1.5ex}
+		\begin{tikzpicture}
+			\fill[ETred] (0,0) rectangle(30em, 0.05em);
+		\end{tikzpicture}
+	\end{beamercolorbox}
+
+	\begin{beamercolorbox}[wd=\paperwidth, ht=0.06\paperwidth]{Title}
+	\hspace*{\Abstandlinks}
+	\insertauthor
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[wd=\paperwidth, ht=0.03\paperwidth]{Title}
+		\hspace*{\Abstandlinks}
+		\insertinstitute
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[wd=\paperwidth, ht=0.07\paperwidth]{Title}
+		\hspace*{\Abstandlinks}
+		\vspace*{20pt}
+		\insertdate
+	\end{beamercolorbox}
+
+}
+
+% Navigationsleiste ausblenden
+\setbeamertemplate{navigation symbols}{}
+
+% Titelfolie der Präsentation
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamerfont{subtitle}{size=\large, series=\bfseries}
+
+% Folientitel 
+\setbeamerfont{fametitle}{size=\large}
+
+% Items
+\setbeamertemplate{itemize items}[square]
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+\documentclass[aspectratio=169,t,ngerman]{beamer}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage[ngerman]{babel}
+
+\usetheme{eigeneslayout}
+
+%\beamertemplatenavigationsymbolsempty
+
+\author{Markus Quanz}
+\title[Kurztitel Präsentation]{Eigenes Template erstellen}
+\subtitle[Kurzer Untertitel]{Langer Untertitel}
+\date{\today}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	
+	\section{Kapitel}
+	\begin{frame}{Folientitel}
+		Das hier ist ein echt langer Text, der über die ganze Seite der Folie gehen soll, was echt schwierig ist, weil die Folie so breit ist.
+		\begin{itemize}
+			\item Erstens
+			\item Zweitens
+		\end{itemize}
+		
+		\begin{enumerate}
+			\item Erstens
+			\item Zweitens
+		\end{enumerate}
+		
+		\alert{Das ist ein Alert.}
+		
+	\end{frame}
+	
+	\section{Gliederung}
+	\begin{frame}{Gliederung der Präsentation}
+		\tableofcontents  % zeigt die Section-Überschriften an
+	\end{frame}
+	
+	\section{Motivation}
+	\begin{frame}{Motivation der Arbeit}
+		
+		\begin{block}{Test}
+			Test
+		\end{block}
+		
+		\begin{exampleblock}{Titel Exampleblock}
+			asdf
+		\end{exampleblock}
+		
+		\begin{alertblock}{Titel Alertblock}
+			asdf
+		\end{alertblock}
+	\end{frame}
+	
+	\section{Aufgabenstellung}
+	
+	\begin{frame}{Gliederung}
+		
+		\tableofcontents[currentsection]
+		
+	\end{frame}
+	
+	\begin{frame}{Präzisierung der Aufgabenstellung}
+		\framesubtitle{Kurztitel}
+		asdf
+	\end{frame}
+	
+	\section{Untersuchungen}
+	\begin{frame}{Durchführung der Untersuchungen}
+		asdf
+	\end{frame}
+	
+	\section{Zusammenfassung}
+	\begin{frame}{Zusammenfassung und Ausblick}
+	\end{frame}
+	
+\end{document}

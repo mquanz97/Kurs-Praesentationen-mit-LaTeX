@@ -1,0 +1,16 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+\usepackage{multimedia}
+\begin{document}
+	
+	\begin{frame}{Video als lokale Datei einbinden}
+		\movie[externalviewer,poster]{\includegraphics[width=0.5\linewidth]{C:/Users/Markus/Desktop/Smiley.jpg}}{C:/Users/Markus/Desktop/Linienstaerken und Linienenden.mp4}
+	\end{frame}
+	
+	\begin{frame}{Video per URL einbinden}
+		\begin{figure}
+			\href{https://youtu.be/FH785luDpgs}{\includegraphics[width=0.5\linewidth]{C:/Users/Markus/Desktop/Smiley.jpg}}
+		\end{figure}
+	\end{frame}
+	
+\end{document}

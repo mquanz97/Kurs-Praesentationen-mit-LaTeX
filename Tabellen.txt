@@ -1,0 +1,15 @@
+\documentclass{beamer}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usetheme{Berlin}
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+	\begin{frame}{Tabellen}
+		\begin{tabular}{c | c}
+			\textbf{Spalte 1} & \textbf{Spalte 2} \\ \hline \hline
+		\rowcolor{blue!10}	a & b \\ \hline
+		\rowcolor{lightgray}	c & d
+		\end{tabular}
+	\end{frame}
+\end{document}

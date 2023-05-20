@@ -1,0 +1,67 @@
+\documentclass[t, aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+\usepackage[ngerman]{babel}
+\setbeamertemplate{caption}[numbered]
+
+\addto\captionsngerman{
+\renewcommand{\figurename}{Abb.}
+}
+
+\begin{document}
+	
+	\section{Introduction}
+	\begin{frame}{Bilder}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.2]{Smiley.jpg}
+			\caption{Ein Smiley}
+			\label{fig:my_label}
+		\end{figure}
+		
+	\end{frame}
+	
+	
+	\begin{frame}{Zwei Bilder übereinander}
+			\begin{columns}[T]
+				\column{0.35\textwidth}
+				
+				\begin{itemize}
+					\item Wichtig
+					\item Noch wichtiger
+					\item Ein weiterer sehr wichtiger Stichpunkt
+					\item Extrem wichtig
+				\end{itemize}
+				
+				\column{0.25\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.15]{Smiley.jpg}
+					\caption{Ein Smiley 1}
+				\end{figure}
+			
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.15]{Smiley.jpg}
+					\caption{Ein Smiley 2}
+				\end{figure}
+				
+				\column{0.25\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.15]{Smiley.jpg}
+					\caption{Ein Smiley 3}
+				\end{figure}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.15]{Smiley.jpg}
+					\caption{Ein Smiley 4}
+				\end{figure}
+				
+			\end{columns}	
+		
+	\end{frame}
+	
+	
+\end{document}

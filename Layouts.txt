@@ -1,0 +1,44 @@
+\documentclass{beamer}
+\usetheme{Berkeley}
+% weitere Themes:
+% default, AnnArbor, Antibes, Bergen, Berkeley, Berlin, Boadilla, CambridgeUS, Copenhagen, Darmstadt, EastLansing, Goettingen, Hannover, Montpellier, Marburg, PaloAlto, Pittsburgh, Rochester, Szeged, Warsaw
+
+\useoutertheme{shadow}
+%bezieht sich auf Kopf- und Fußzeile, Seitenränder, Logo und Folienüberschrift
+% weitere outer themes:
+% default, infolines, miniframes, smoothbars, sidebar, split, shadow, tree, smoothtree
+
+\useinnertheme{rectangles}
+% bezieht sich auf, Titleseite, Itemize & Enumerate, Blöcke, Theoreme, Grafiken, Tabellen
+% weitere inner themes:
+% default, circles, rectangles, rounded, inmargin
+
+\usecolortheme{seagull}
+% weitere color themes:
+% default, albatross, beetle, crane, dove, fly, monarca, seagull, wolverine, beaver, spruce
+
+\usefonttheme{structureitalicserif}
+% weitere font themes
+% default, serif, structurebold, structureitalicserif, structuresmallcapsserif
+
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+	\begin{frame}{Itemize \& Enumerate}
+		
+		Itemize
+		\begin{itemize}
+			\item Milch
+			\item Eier
+			\item Butter
+		\end{itemize}
+		
+		Enumerate
+		\begin{enumerate}
+			\item Einleitung
+			\item Hauptteil
+			\item Schluss
+		\end{enumerate} 
+	\end{frame}
+	
+\end{document}

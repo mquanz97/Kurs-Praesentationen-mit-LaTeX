@@ -1,0 +1,23 @@
+\documentclass{beamer}
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+	\begin{frame}[label=item]{Itemize}
+		\begin{itemize}
+			\item Milch
+			\item Eier
+			\item Butter
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Enumerate}
+		\begin{enumerate}
+			\item Einleitung
+			\item Hauptteil
+			\item Schluss
+		\end{enumerate} 
+	\end{frame}
+
+\againframe{item}
+	
+\end{document}

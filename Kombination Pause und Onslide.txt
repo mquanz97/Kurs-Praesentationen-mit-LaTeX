@@ -1,0 +1,23 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+\setbeamercovered{transparent=20}
+\begin{document}
+	
+	\begin{frame}{Kombination Pause und Onslide}
+		\begin{itemize}
+			\item Item eins \pause
+			\item Item zwei	\pause
+			\item Item drei
+		\end{itemize}
+		
+		\onslide sichtbar, obwohl vorher Pause steht, gilt für alles nachfolgende, bis neuer Overlay-Befehl eingefügt wird
+		%\pause
+		\begin{itemize}
+			\item Weitere Aufzählung 
+		\end{itemize}
+		
+	\end{frame}
+	
+	
+	
+\end{document}

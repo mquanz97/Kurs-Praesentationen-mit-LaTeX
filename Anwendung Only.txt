@@ -1,0 +1,21 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+%\setbeamercovered{transparent=20}
+\begin{document}
+	
+	
+	\begin{frame}{Anwendung Only}
+		Berlin ist die Hauptstadt von 
+		\only<1>{\line(1,0){50}}
+		\only<2->{\alert<2>{Deutschland}}
+		.\\
+		Paris ist die Hauptstadt von 
+		\only<1-2>{\line(1,0){50}}
+		\only<3>{\textbf{Frankreich}}
+		.
+	
+		
+	\end{frame}
+	
+	
+\end{document}

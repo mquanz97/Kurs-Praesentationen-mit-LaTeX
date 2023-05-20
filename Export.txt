@@ -1,0 +1,73 @@
+\documentclass[c, ngerman
+]{beamer}
+\usetheme{Berlin}
+
+\beamertemplatenavigationsymbolsempty
+\usepackage{pgfpages}
+\pgfpagesuselayout{4 on 1}[a4paper, border shrink =5mm, landscape]
+
+\begin{document}
+	
+	\begin{frame}{Blöcke}
+		
+		\begin{block}{Titel Block}
+			asdf
+		\end{block}
+	
+		\begin{exampleblock}{Titel Exampleblock}
+			asdf
+		\end{exampleblock}
+		
+		\begin{alertblock}{Titel Alertblock}
+			asdf
+		\end{alertblock}
+		
+	\end{frame}
+	
+	
+	\begin{frame}{Frame Title}
+		
+		\begin{proof} 
+			Beweis
+		\end{proof}
+		
+		\begin{definition}
+			Definition
+		\end{definition}
+		
+		\begin{lemma}
+			Das Lemmata
+		\end{lemma}
+		
+		\begin{theorem}
+			Theorem
+		\end{theorem}
+	
+			
+		\newtheorem{et}{eigenes Theorem}
+		\begin{et}
+			Bemerkung
+		\end{et}
+	
+	\end{frame}
+	
+	\begin{frame}{Itemize \& Enumerate}
+		
+		Itemize
+		\begin{itemize}
+			\item Milch
+			\item Eier
+			\item Butter
+		\end{itemize}
+		
+		Enumerate
+		\begin{enumerate}
+			\item Einleitung
+			\item Hauptteil
+			\item Schluss
+		\end{enumerate} 
+	\end{frame}
+	
+
+	
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+\setbeamercovered{transparent=25}
+\begin{document}
+%	\begin{frame}{Pause}
+%		\begin{itemize}
+%			\item Milch
+%			\pause
+%			\item Eier
+%			\pause
+%			\item Butter
+%		\end{itemize}
+%	\end{frame}
+
+\begin{frame}{Beliebige Reihenfolgen}
+	x, y und z stehen für die Zeitpunkte, wann etwas eingeblendet wird \newline \\
+	\begin{tabular}{c|l}
+		$<x>$ & nur an Stelle x einblenden \\
+		$<x->$ & ab Stelle x einblenden, bis zum Schluss sichtbar \\
+		$<-x>$ & bis zur Stelle x einblenden, danach ausblenden \\
+		$<x-y>$ & von der Stelle x bis zur Stelle y eingeblendet \\
+		$<x,y-z>$ & sichtbar an Stelle x und dann erst wieder von der Stelle y bis z eingeblendet \\
+	\end{tabular}
+	
+\end{frame}
+
+\begin{frame}{Beispiel Beliebige Reihenfolgen}
+	\begin{itemize}
+		\item<1-> an 1. Stelle bis zum Schluss sichtbar
+		\item<1> nur an 1. Stelle sichtbar
+		\item<2-> von der 2. Stelle bis zum Schluss sichtbar
+		\item<4-> von der vierten Stelle bis zum Ende sichtbar
+		\item<-3> vom Anfang bis zum 3. Animationspunkt sichtbar
+		\item<2-3> nur auf Folie 2 bis Folie 3 sichtbar
+		\item<1, 3-> an der ersten Stelle und dann erst wieder ab der dritten Stelle bis zum Schluss sichtbar
+	\end{itemize} 
+\end{frame}
+
+\end{document}

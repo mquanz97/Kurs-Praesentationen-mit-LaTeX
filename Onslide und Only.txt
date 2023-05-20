@@ -1,0 +1,33 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+%\setbeamercovered{transparent=20}
+\begin{document}
+	
+	
+\begin{frame}{Onslide/Only}
+	
+	\begin{columns}[T]
+		\column{0.4\textwidth}
+		Onslide
+		\begin{itemize}
+			\onslide<2->{\item Eins}
+			\onslide<1>{\item Zwei}
+			\onslide<3->{\item Drei}
+		\end{itemize}
+	
+		
+		\column{0.4\textwidth}
+		Only
+		\begin{itemize}
+			\only<2->{\item Eins}
+			\only<1>{\item Zwei}
+			\only<3->{\item Drei}
+		\end{itemize}
+	
+		
+	\end{columns}
+	
+\end{frame}
+
+
+\end{document}

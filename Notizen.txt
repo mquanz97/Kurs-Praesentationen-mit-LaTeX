@@ -1,0 +1,57 @@
+\documentclass[c, ngerman,
+]{beamer}
+\usetheme{Berlin}
+\beamertemplatenavigationsymbolsempty
+\setbeameroption{show notes}
+\usepackage{pgfpages}
+
+\begin{document}
+	
+	\begin{frame}{Blöcke}
+		
+		\begin{block}{Titel Block}
+			asdf
+		\end{block}
+	
+		\begin{exampleblock}{Titel Exampleblock}
+			asdf
+		\end{exampleblock}
+		
+		\begin{alertblock}{Titel Alertblock}
+			asdf
+		\end{alertblock}
+	
+	\note{Notiz 1}
+		
+	\end{frame}
+	
+	
+	\begin{frame}{Frame Title}
+		
+		\begin{proof} 
+			Beweis
+		\end{proof}
+		
+		\begin{definition}
+			Definition
+		\end{definition}
+		
+		\begin{lemma}
+			Das Lemmata
+		\end{lemma}
+		
+		\begin{theorem}
+			Theorem
+		\end{theorem}
+	
+			
+		\newtheorem{et}{eigenes Theorem}
+		\begin{et}
+			Bemerkung
+		\end{et}
+		\note[item]{Notiz 2}
+	\end{frame}
+	
+
+	
+\end{document}
